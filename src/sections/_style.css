@@ -1,0 +1,166 @@
+.hero {
+  @apply bg-[url('../assets/images/mobile/image-header.jpg')]
+  bg-no-repeat
+  bg-cover
+  flex
+  flex-col
+  justify-center
+  items-center
+  p-4
+  min-h-[33.5rem]
+  w-full
+  gap-8;
+}
+
+.title {
+  @apply text-White
+    text-[2.5rem]
+    font-Fraunces
+    text-center
+    font-bold
+    tracking-widest
+    uppercase;
+}
+
+.first,
+.second,
+.third,
+.fourth {
+  @apply flex
+    flex-col
+    w-full
+    h-full
+    justify-center
+    items-center;
+}
+
+.egg,
+.cup {
+  @apply w-full;
+}
+
+.content {
+  @apply flex
+    flex-col
+    justify-center
+    items-center
+    text-center
+    text-Dark-grayish-blue
+    bg-White
+    p-8
+    gap-4;
+}
+
+.content h2 {
+  @apply text-Very-dark-desaturated-blue
+    font-Fraunces
+    font-bold
+    text-3xl;
+}
+
+.hyperlink {
+  @apply relative;
+}
+
+.hyperlink a {
+  @apply font-Fraunces
+    text-Very-dark-desaturated-blue
+    uppercase
+    relative
+    z-20
+    font-bold;
+}
+
+.underline {
+  @apply absolute
+    bottom-0
+    -right-[2px]
+    top-4
+    z-10
+    w-[7.5rem]
+    h-2
+    
+    rounded-lg
+    opacity-35;
+}
+
+.underline#yellow {
+  @apply bg-Yellow;
+}
+
+.underline#red {
+  @apply bg-Soft-red;
+}
+
+.graphic,
+.photography {
+  @apply flex
+  flex-col
+  justify-center
+  items-center
+  text-center
+  p-4
+  pt-[100%]
+  pb-14
+  gap-4
+  h-full;
+}
+
+.graphic h3,
+.photography h3 {
+  @apply font-Fraunces
+  font-bold
+  text-3xl;
+}
+
+.graphic {
+  @apply bg-[url('../assets/images/mobile/image-graphic-design.jpg')]
+  bg-no-repeat
+  bg-cover
+  text-Dark-desaturated-cyan;
+}
+
+.photography {
+  @apply bg-[url('../assets/images/mobile/image-photography.jpg')]
+  bg-no-repeat
+  bg-cover
+  text-Dark-blue;
+}
+
+.fourth {
+  @apply px-6
+  py-20
+  gap-10
+  bg-White;
+}
+
+.fourth h2 {
+  @apply font-Fraunces
+  text-Grayish-blue
+  tracking-[.2rem]
+  uppercase
+  text-lg
+  font-semibold;
+}
+
+.client {
+  @apply flex
+  flex-col
+  justify-center
+  items-center
+  text-Very-dark-grayish-blue
+  text-center
+  gap-4;
+}
+
+.client h4 {
+  @apply text-Dark-blue
+  font-extrabold
+  font-Fraunces;
+}
+
+.client h5 {
+  @apply -mt-3
+  text-Grayish-blue
+  text-sm;
+}
