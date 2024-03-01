@@ -1,13 +1,17 @@
-import { useState } from "react";
-import reactLogo from "./assets/react.svg";
-import viteLogo from "/vite.svg";
+import First from "./sections/First";
+import Fourth from "./sections/Fourth";
+import Hero from "./sections/Hero";
+import Second from "./sections/Second";
+import Third from "./sections/Third";
 
 function App() {
-  const [count, setCount] = useState(0);
-
   return (
-    <main>
-      <h1>Test</h1>
+    <main className="min-h-screen w-full flex flex-col font-Barlow">
+      <Hero />
+      <First />
+      <Second />
+      <Third />
+      <Fourth />
     </main>
   );
 }
