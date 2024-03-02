@@ -33,20 +33,22 @@ const Fourth = () => {
   return (
     <section className="fourth">
       <h2>Client Testimonials</h2>
-      {clients.map((client) => {
-        return (
-          <div className="client" key={client.id}>
-            <img
-              src={client.image}
-              className="rounded-full w-14 h-14"
-              alt="Profile picture"
-            />
-            <p>{client.testimonial}</p>
-            <h4>{client.name}</h4>
-            <h5>{client.occupation}</h5>
-          </div>
-        );
-      })}
+      <div className="client-container">
+        {clients.map((client) => {
+          return (
+            <div className="client" key={client.id}>
+              <img
+                src={client.image}
+                className="rounded-full w-14 h-14"
+                alt="Profile picture"
+              />
+              <p>{client.testimonial}</p>
+              <h4>{client.name}</h4>
+              <h5>{client.occupation}</h5>
+            </div>
+          );
+        })}
+      </div>
     </section>
   );
 };

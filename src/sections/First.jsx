@@ -1,11 +1,15 @@
-import egg from "../assets/images/mobile/image-transform.jpg";
+import eggMobile from "../assets/images/mobile/image-transform.jpg";
+import eggDesktop from "../assets/images/desktop/image-transform.jpg";
 import "./_style.css";
 
 const First = () => {
   return (
     <section className="first">
-      <div className="egg">
-        <img src={egg} alt="egg image" />
+      <div className="egg md:hidden">
+        <img src={eggMobile} alt="egg image" />
+      </div>
+      <div className="egg md:block hidden">
+        <img src={eggDesktop} alt="egg image" />
       </div>
       <div className="content">
         <h2>Transform your brand</h2>

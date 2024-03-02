@@ -9,6 +9,36 @@
   transition-colors;
 }
 
+.active-navigation {
+  @apply absolute
+  bg-white
+  flex
+  flex-col
+  justify-center
+  items-center
+  text-center
+  gap-5
+  top-16
+  left-5
+  w-[90%]
+  p-10
+  z-10;
+}
+
+.active-navigation a {
+  @apply text-Grayish-blue;
+}
+
+.active-navigation button {
+  @apply bg-Yellow
+  py-3
+  px-6
+  rounded-full
+  font-Fraunces
+  font-bold
+  text-Dark-desaturated-cyan;
+}
+
 .scrolled {
   @apply bg-White
   transition-colors;
@@ -16,6 +46,41 @@
 
 .scrolled img {
   @apply transition;
+}
+
+.navigation {
+  @apply hidden
+  md:flex
+  flex-row
+  items-center
+  gap-12
+  px-4;
+}
+
+.navigation a {
+  @apply text-White
+  hover:text-Dark-desaturated-cyan;
+}
+
+.navigation button {
+  @apply bg-white
+  py-3
+  px-6
+  rounded-full
+  text-Dark-desaturated-cyan
+  font-Fraunces
+  font-bold
+  hover:text-White
+  hover:bg-opacity-20;
+}
+
+.navigation.scrolled a {
+  @apply text-Dark-desaturated-cyan;
+}
+
+.navigation.scrolled button {
+  @apply bg-Yellow
+  text-White;
 }
 
 .hero {
@@ -29,7 +94,12 @@
   p-4
   min-h-[33.5rem]
   w-full
-  gap-8;
+  gap-8
+  md:bg-[url('../assets/images/desktop/image-header.jpg')]
+  md:min-h-[50rem]
+  md:justify-start
+  md:pt-40
+  md:gap-28;
 }
 
 .title {
@@ -53,12 +123,40 @@
     w-full
     h-full
     justify-center
-    items-center;
+    items-center
+    md:flex-row;
+}
+
+.first {
+  @apply md:flex-row-reverse
+  md:h-[500px];
+}
+
+.second {
+  @apply md:h-[500px];
+}
+
+.third {
+  @apply md:h-[520px];
+}
+
+.fourth,
+.footer {
+  @apply md:flex-col;
 }
 
 .egg,
 .cup {
-  @apply w-full;
+  @apply w-full
+  h-full
+  md:w-1/2;
+}
+
+.egg img,
+.cup img {
+  @apply object-cover
+  w-full
+  h-full;
 }
 
 .content {
@@ -70,7 +168,10 @@
     text-Dark-grayish-blue
     bg-White
     p-8
-    gap-4;
+    gap-4
+    h-full
+    w-full
+    md:w-1/2;
 }
 
 .content h2 {
@@ -125,7 +226,11 @@
   pt-[100%]
   pb-14
   gap-4
-  h-full;
+  h-full
+  w-full
+  md:pt-[20%]
+  md:pb-2
+  md:px-48;
 }
 
 .graphic h3,
@@ -139,14 +244,16 @@
   @apply bg-[url('../assets/images/mobile/image-graphic-design.jpg')]
   bg-no-repeat
   bg-cover
-  text-Dark-desaturated-cyan;
+  text-Dark-desaturated-cyan
+  md:bg-[url('../assets/images/desktop/image-graphic-design.jpg')];
 }
 
 .photography {
   @apply bg-[url('../assets/images/mobile/image-photography.jpg')]
   bg-no-repeat
   bg-cover
-  text-Dark-blue;
+  text-Dark-blue
+  md:bg-[url('../assets/images/desktop/image-photography.jpg')];
 }
 
 .fourth {
@@ -165,6 +272,15 @@
   font-semibold;
 }
 
+.client-container {
+  @apply flex
+  flex-col
+  gap-10
+  md:flex-row
+  md:px-14
+  md:gap-2;
+}
+
 .client {
   @apply flex
   flex-col
@@ -172,7 +288,8 @@
   items-center
   text-Very-dark-grayish-blue
   text-center
-  gap-4;
+  gap-4
+  md:px-14;
 }
 
 .client h4 {
@@ -208,15 +325,25 @@
   flex
   flex-row
   justify-between
-  items-center;
+  items-center
+  md:justify-center
+  md:gap-16;
 }
 
 .links a {
   @apply text-Dark-desaturated-cyan
-  opacity-50;
+  opacity-50
+  hover:text-white
+  hover:opacity-100;
 }
 
 .socials {
   @apply justify-evenly
-  px-4;
+  px-4
+  md:justify-center
+  md:gap-6;
+}
+
+.socials path {
+  @apply hover:fill-white;
 }
