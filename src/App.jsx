@@ -9,7 +9,7 @@ import Third from "./sections/Third";
 
 function App() {
   return (
-    <main className="min-h-screen w-full flex flex-col font-Barlow">
+    <main className="min-h-screen w-screen flex flex-col font-Barlow">
       <Header />
       <Hero />
       <First />
