@@ -1,4 +1,3 @@
-import React from "react";
 import arrow from "../assets/images/icon-arrow-down.svg";
 import "./_style.css";
 

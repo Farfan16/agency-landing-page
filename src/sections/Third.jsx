@@ -7,7 +7,7 @@ const Third = () => {
         <h3>Graphic Design</h3>
         <p>
           Great design makes you memorable. We deliver artwork that underscores
-          your brand message and captures potential clients' attention.
+          your brand message and captures potential clients&apos; attention.
         </p>
       </div>
       <div className="photography">

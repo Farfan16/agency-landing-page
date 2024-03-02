@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import sunnyside from "../assets/images/logo.svg";
 import sunnysideAlt from "../assets/images/logo-green.svg";
 import hamburger from "../assets/images/icon-hamburger.svg";
